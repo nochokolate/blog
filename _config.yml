@@ -16,11 +16,11 @@
 title: 生活日记
 email: datouguix@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  希望可以使用这个网站来分享自己的生活！
+  分享自己的生活日记！
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: Big_foolishman
-github_username:  369329303
+github_username:  "369329303"
 
 # Build settings
 markdown: kramdown
