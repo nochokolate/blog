@@ -1,6 +1,0 @@
----
-layout: post
-title: 如何优化nginx的配置
----
-
-## 如何优化nginx的配置
