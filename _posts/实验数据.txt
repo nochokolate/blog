@@ -1,0 +1,94 @@
+实验数据
+                                            ----------> Server1
+Benchmark-tools -------->  LoadBanlancer --->            
+                                            ----------> Server2
+压满CPU意味着CPU使用率稳定在95%以上。
+
+仅仅反向代理S1:
+root@benchmark-tools:~# wrk -c 100 -d 30s -t 4 http://10.131.0.6:9188/webTest
+Running 30s test @ http://10.131.0.6:9188/webTest
+  4 threads and 100 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   523.49ms  288.98ms   1.09s    57.37%
+    Req/Sec    47.32     19.78   121.00     68.06%
+  5672 requests in 30.05s, 1.09MB read
+Requests/sec:    188.78
+Transfer/sec:     37.24KB
+root@benchmark-tools:~# wrk -c 100 -d 30s -t 4 http://10.131.0.6:9188/webTest
+Running 30s test @ http://10.131.0.6:9188/webTest
+  4 threads and 100 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   519.86ms  289.92ms   1.06s    57.27%
+    Req/Sec    47.78     20.15   120.00     69.04%
+  5714 requests in 30.04s, 1.10MB read
+Requests/sec:    190.21
+Transfer/sec:     37.52KB
+root@benchmark-tools:~# wrk -c 100 -d 30s -t 4 http://10.131.0.6:9188/webTest
+Running 30s test @ http://10.131.0.6:9188/webTest
+  4 threads and 100 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   520.78ms  287.10ms   1.09s    58.54%
+    Req/Sec    47.64     19.26   111.00     70.24%
+  5695 requests in 30.04s, 1.10MB read
+Requests/sec:    189.57
+Transfer/sec:     37.40KB
+
+
+仅仅反向代理S2：
+root@benchmark-tools:~# wrk -c 100 -d 30s -t 4 http://10.131.0.6:9188/webTest
+Running 30s test @ http://10.131.0.6:9188/webTest
+  4 threads and 100 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   590.98ms  298.07ms   1.31s    59.25%
+    Req/Sec    41.98     17.81   101.00     59.75%
+  5021 requests in 30.04s, 0.97MB read
+Requests/sec:    167.13
+Transfer/sec:     32.97KB
+root@benchmark-tools:~# wrk -c 100 -d 30s -t 4 http://10.131.0.6:9188/webTest
+Running 30s test @ http://10.131.0.6:9188/webTest
+  4 threads and 100 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   617.87ms  293.93ms   1.29s    58.99%
+    Req/Sec    40.29     16.09    90.00     64.89%
+  4804 requests in 30.04s, 0.93MB read
+Requests/sec:    159.93
+Transfer/sec:     31.55KB
+root@benchmark-tools:~# wrk -c 100 -d 30s -t 4 http://10.131.0.6:9188/webTest
+Running 30s test @ http://10.131.0.6:9188/webTest
+  4 threads and 100 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   609.00ms  296.35ms   1.36s    59.61%
+    Req/Sec    40.70     17.33   121.00     62.07%
+  4852 requests in 30.03s, 0.93MB read
+Requests/sec:    161.57
+Transfer/sec:     31.87KB
+
+
+同时反向代理S1和S2:
+root@benchmark-tools:~# wrk -c 220 -d 30s -t 4 http://10.131.0.6:9188/webTest
+Running 30s test @ http://10.131.0.6:9188/webTest
+  4 threads and 220 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   573.23ms  297.76ms   1.63s    59.11%
+    Req/Sec    95.12     25.94   171.00     76.08%
+  11392 requests in 30.04s, 2.19MB read
+Requests/sec:    379.26
+Transfer/sec:     74.81KB
+root@benchmark-tools:~# wrk -c 220 -d 30s -t 4 http://10.131.0.6:9188/webTest
+Running 30s test @ http://10.131.0.6:9188/webTest
+  4 threads and 220 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   571.87ms  293.07ms   1.29s    58.69%
+    Req/Sec    95.34     26.77   210.00     73.83%
+  11419 requests in 30.04s, 2.20MB read
+Requests/sec:    380.15
+Transfer/sec:     74.99KB
+root@benchmark-tools:~# wrk -c 220 -d 30s -t 4 http://10.131.0.6:9188/webTest
+Running 30s test @ http://10.131.0.6:9188/webTest
+  4 threads and 220 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency   557.10ms  290.94ms   1.24s    58.10%
+    Req/Sec    97.86     27.48   210.00     63.25%
+  11717 requests in 30.03s, 2.26MB read
+Requests/sec:    390.15
+Transfer/sec:     76.96KB
