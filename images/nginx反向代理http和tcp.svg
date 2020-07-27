@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- 由 Microsoft Visio, SVG Export 生成 nginx反向代理http和tcp.svg Page-1 -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="11.6929in" height="8.26772in"
+		viewBox="0 0 841.89 595.276" xml:space="preserve" color-interpolation-filters="sRGB" class="st13">
+	<v:documentProperties v:langID="2052" v:metric="true" v:viewMarkup="false">
+		<v:userDefs>
+			<v:ud v:nameU="msvSubprocessMaster" v:prompt="" v:val="VT4(Rectangle)"/>
+			<v:ud v:nameU="msvNoAutoConnect" v:val="VT0(1):26"/>
+		</v:userDefs>
+	</v:documentProperties>
+
+	<style type="text/css">
+	<![CDATA[
+		.st1 {fill:#4672c4;stroke:#c7c8c8;stroke-width:0.25}
+		.st2 {fill:#feffff;font-family:黑体;font-size:1.00001em}
+		.st3 {font-family:Calibri;font-size:1em}
+		.st4 {stroke:#4672c4;stroke-linecap:round;stroke-linejoin:round;stroke-width:1}
+		.st5 {fill:#ffffff;stroke:none;stroke-linecap:butt}
+		.st6 {fill:#3c63ac;font-family:Calibri;font-size:1.00001em}
+		.st7 {fill:#ffffff;stroke:none;stroke-linecap:butt;stroke-width:7.2}
+		.st8 {fill:none;stroke:none;stroke-width:0.25}
+		.st9 {fill:#4672c4;font-family:Calibri;font-size:1.99999em}
+		.st10 {font-family:黑体;font-size:1em}
+		.st11 {fill:#4672c4;font-family:Calibri;font-size:1.00001em}
+		.st12 {font-size:1em}
+		.st13 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+		<v:userDefs>
+			<v:ud v:nameU="msvThemeOrder" v:val="VT0(0):26"/>
+		</v:userDefs>
+		<title>页-1</title>
+		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="8.50394"
+				v:shadowOffsetY="-8.50394"/>
+		<v:layer v:name="连接线" v:index="0"/>
+		<g id="shape1-1" v:mID="1" v:groupContext="shape" transform="translate(141.732,-260.954)">
+			<title>矩形</title>
+			<desc>测试机器 4核/8G 10.131.0.3/16</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="552.756" width="113.39" height="85.0394"/>
+			<rect x="0" y="510.236" width="113.386" height="85.0394" class="st1"/>
+			<text x="32.69" y="541.56" class="st2" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>测试机器<v:newlineChar/><tspan
+						x="38.51" dy="1.331em" class="st3">4</tspan>核<tspan class="st3">/8G<v:newlineChar/></tspan><tspan x="22.46"
+						dy="1.233em" class="st3">10.131.0.3/16</tspan></text>		</g>
+		<g id="shape2-7" v:mID="2" v:groupContext="shape" transform="translate(368.504,-260.954)">
+			<title>矩形.2</title>
+			<desc>负载均衡机器 4核/8G 10.131.0.4/16</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="552.756" width="113.39" height="85.0394"/>
+			<rect x="0" y="510.236" width="113.386" height="85.0394" class="st1"/>
+			<text x="20.69" y="541.56" class="st2" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>负载均衡机器<v:newlineChar/><tspan
+						x="38.51" dy="1.331em" class="st3">4</tspan>核<tspan class="st3">/8G<v:newlineChar/></tspan><tspan x="22.46"
+						dy="1.233em" class="st3">10.131.0.4/16</tspan></text>		</g>
+		<g id="shape3-13" v:mID="3" v:groupContext="shape" transform="translate(637.795,-382.677)">
+			<title>矩形.3</title>
+			<desc>服务器1 1核/1G 10.131.0.5/16</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="552.756" width="113.39" height="85.0394"/>
+			<rect x="0" y="510.236" width="113.386" height="85.0394" class="st1"/>
+			<text x="35.65" y="541.56" class="st2" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>服务器<tspan class="st3">1<v:newlineChar/></tspan><tspan
+						x="38.51" dy="1.331em" class="st3">1</tspan>核<tspan class="st3">/1G<v:newlineChar/></tspan><tspan x="22.46"
+						dy="1.233em" class="st3">10.131.0.5/16</tspan></text>		</g>
+		<g id="shape4-20" v:mID="4" v:groupContext="shape" transform="translate(637.795,-147.568)">
+			<title>矩形.4</title>
+			<desc>服务器2 1核/1G 10.131.0.6/16</desc>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="552.756" width="113.39" height="85.0394"/>
+			<rect x="0" y="510.236" width="113.386" height="85.0394" class="st1"/>
+			<text x="35.65" y="541.56" class="st2" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>服务器<tspan class="st3">2<v:newlineChar/></tspan><tspan
+						x="38.51" dy="1.331em" class="st3">1</tspan>核<tspan class="st3">/1G<v:newlineChar/></tspan><tspan x="22.46"
+						dy="1.233em" class="st3">10.131.0.6/16</tspan></text>		</g>
+		<g id="shape5-27" v:mID="5" v:groupContext="shape" v:layerMember="0" transform="translate(255.118,-296.387)">
+			<title>动态连接线</title>
+			<desc>1Gb/s</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="588.189" width="60" height="22.4037"/>
+			<path d="M0 588.19 L113.39 588.19" class="st4"/>
+			<rect v:rectContext="textBkgnd" x="42.0502" y="580.989" width="29.2854" height="14.4001" class="st5"/>
+			<text x="42.05" y="591.79" class="st6" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>1Gb/s</text>		</g>
+		<g id="shape6-32" v:mID="6" v:groupContext="shape" v:layerMember="0" transform="translate(481.89,-303.474)">
+			<title>动态连接线.6</title>
+			<desc>1Gb/s</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="77.5359" cy="533.997" width="60" height="22.4037"/>
+			<path d="M0 595.28 L77.54 595.28 L77.54 473.55 L155.91 473.55" class="st4"/>
+			<rect v:rectContext="textBkgnd" x="62.8931" y="526.797" width="29.2854" height="14.4001" class="st5"/>
+			<text x="62.89" y="537.6" class="st6" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>1Gb/s</text>		</g>
+		<g id="shape7-37" v:mID="7" v:groupContext="shape" v:layerMember="0" transform="translate(481.89,-303.474)">
+			<title>动态连接线.7</title>
+			<desc>1Gb/s</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="77.5359" cy="652.385" width="60" height="22.4037"/>
+			<path d="M0 595.28 L77.54 595.28 L77.54 708.66 L155.91 708.66" class="st4"/>
+			<rect v:rectContext="textBkgnd" x="62.8931" y="645.186" width="29.2854" height="14.4001" class="st7"/>
+			<text x="62.89" y="655.99" class="st6" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>1Gb/s</text>		</g>
+		<g id="shape8-42" v:mID="8" v:groupContext="shape" transform="translate(263.455,-501.065)">
+			<title>工作表.8</title>
+			<desc>TCP/HTTP 反向代理拓扑图</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="155.906" cy="566.929" width="311.82" height="56.6929"/>
+			<rect x="0" y="538.583" width="311.811" height="56.6929" class="st8"/>
+			<text x="20.74" y="574.92" class="st9" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>TCP/HTTP <tspan
+						class="st10">反向代理拓扑图</tspan></text>		</g>
+		<g id="shape11-46" v:mID="11" v:groupContext="shape" transform="translate(648.425,-349.328)">
+			<title>工作表.11</title>
+			<desc>:8000 HTTP/TCP服务端口</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="46.063" cy="581.102" width="92.13" height="28.3465"/>
+			<rect x="0" y="566.929" width="92.126" height="28.3465" class="st8"/>
+			<text x="6.71" y="576.71" class="st11" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>:8000 HTTP/TCP<tspan
+						x="22.06" dy="1.298em" class="st10">服务端口</tspan></text>		</g>
+		<g id="shape12-50" v:mID="12" v:groupContext="shape" transform="translate(648.425,-113.386)">
+			<title>工作表.12</title>
+			<desc>:8000 HTTP/TCP服务端口</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="46.063" cy="581.102" width="92.13" height="28.3465"/>
+			<rect x="0" y="566.929" width="92.126" height="28.3465" class="st8"/>
+			<text x="6.71" y="576.71" class="st11" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>:8000 HTTP/TCP<tspan
+						x="22.06" dy="1.298em" class="st10">服务端口</tspan></text>		</g>
+		<g id="shape13-54" v:mID="13" v:groupContext="shape" transform="translate(362.668,-354.331)">
+			<title>工作表.13</title>
+			<desc>:9188 反向代理HTTP :9199 反向代理TCP</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)" v:tabSpace="42.5197"/>
+			<v:textRect cx="56.6929" cy="566.929" width="113.39" height="56.6929"/>
+			<rect x="0" y="538.583" width="113.386" height="56.6929" class="st8"/>
+			<text x="4.88" y="562.94" class="st11" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>:9188 <tspan
+						class="st10">反向代理</tspan>HTTP<v:newlineChar/><tspan x="8.34" dy="1.331em" class="st12">:9199 </tspan><tspan
+						class="st10">反向代理</tspan>TCP</text>		</g>
+	</g>
+</svg>
